@@ -1,0 +1,63 @@
+/* Это файл CSS, а это комментарий */
+
+h1{
+    margin-top: 30px;
+    color: white;
+}
+
+p{
+    color: black;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    text-align:left;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.block1 {
+    display:inline-table;
+    font-size: 50px;
+    vertical-align: middle;
+    text-align:center;
+    font-family: Arial;
+	width: 200px;
+	height: 250px;
+	background: linear-gradient(to bottom, rgb(19, 159, 0) 70%, white 50%);
+	margin: 10px;
+    box-shadow: 0 0 5px;
+}
+.block2 {
+    display:inline-table;
+    font-size: 50px;
+    vertical-align: middle;
+    text-align:center;
+    font-family: Arial;
+	width: 200px;
+	height: 250px;
+	background: linear-gradient(to bottom, rgb(6, 154, 222) 70%, white 50%);
+	margin: 10px;
+    box-shadow: 0 0 5px;
+}
+
+img{
+    position:fixed;
+    top: 180px;
+    left: 380px;
+}
+
+.block2 h1{
+    color: black;
+}
+
+.block3 {
+    display:inline-table;
+    font-size: 50px;
+    vertical-align: middle;
+    text-align:center;
+    font-family: Arial;
+	width: 200px;
+	height: 250px;
+	background: linear-gradient(to bottom, rgb(255, 209, 3) 70%, white 50%);
+    margin: 10px;
+    box-shadow: 0 0 5px;
+}
