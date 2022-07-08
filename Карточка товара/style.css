@@ -1,0 +1,154 @@
+body{   /* Установка основного шрифта на странице */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+header{     /* Изменение положения заголовка */
+    text-align: right;
+    margin-top: 80px;
+    margin-bottom: 0px;
+    margin-right: 250px;
+}
+header h1{      /* Установка жирного шрифта для заголовка */
+    font-weight:900;
+}
+nav{    /* Изменение положения блока навигации */
+    font-size: 14px;
+    text-align: right;
+    margin-right: 210px;
+    margin-bottom: 40px;
+}
+nav a{      /* Стилизация ссылок  */
+    padding: 5px;
+    color: rgb(78, 93, 255);
+    text-decoration: none;
+}
+.Price {    /* Редактирование положения блока и стилизация шрифта */
+    margin-left: -30px;
+    margin-bottom: 10px;
+    float: right;
+    color: #728461;
+    font-family: Verdana;
+    font-size: 18px;
+    display: inline-flex;
+    width: 470px;
+    background: #ffffff;
+}
+.Price .p1{     /* Стилизация шрифта */
+    text-decoration: line-through;
+    color: rgb(198, 198, 198);
+}
+.Price .p2{     /* Изменение пололжения тектса */
+    padding-left: 10px;
+}
+.Price .p3{     /* Изменение пололжения тектса и цвета шрифта */
+    padding-left: 40px;
+    font-weight: 900;
+    color: black;
+}
+.Price .promo{      /* Изменение пололжения тектса */
+    padding-left: 10px;
+}
+.Price p{       /* Изменение пололжения тектса */
+    padding-left: 30px;
+}
+.InStock{       /* Изменение пололжения тектса и редактирование цвета */
+    background: rgb(241, 237, 237);
+    width: 500px;
+    display: block;
+}
+.InStock .lamodaHref{   /* Стилизация шрифта */
+    color: rgb(78, 93, 255);
+    text-decoration: none;
+}
+.InStock p{     /* Стилизация шрифта */
+    font-size: 14px;
+    color: #728461;
+    padding-left: 30px;
+}
+.InStock p::first-letter{   /* Изменение значков в блоке о наличии и доставке товара */
+    margin-right: 5px;
+    font-size: 20px;
+    color: black;
+}
+.blocks{     /* Изменение пололжения блока */   
+    position:absolute;
+    display:grid;
+    right: 0%;
+}
+.buttons{   /* Изменение пололжения и размера блока */ 
+    display:flex;
+    margin-top: 60px;
+    width: 500px;
+    height: 60px;
+}
+.buttons .b1{   /* Стилизация шрифта и изменение размера кнопки */
+    font-size: 16px;
+    width: 300px;
+    background: rgb(19, 42, 255);
+    color: white;
+    border: none;
+}
+.buttons .b2{   /* Стилизация шрифта и изменение размера кнопки */
+    font-size: 16px;
+    background: white;
+    width: 300px;
+    margin-left: 30px;
+}
+.lowText{   /* Стилизация шрифта и выравнивание */
+    color: #728461;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+.footer{    /* Стилизация шрифта и выравнивание */
+    color: #728461;
+    margin-top: 20px;
+    display: inline-flexbox;
+    margin-bottom: 30px;
+}
+.lowImage{  /* Выравнивание логотипов соц сетей */
+    display:flex;
+    float: right;
+    margin-right: 260px;
+    margin-top: -45px;
+    padding-left: 30px ;
+}
+.lowImage .img2{    /* Выравнивание логотипов соц сетей */
+    padding-left: 10px;
+}
+.lowImage .img3{    /* Выравнивание логотипов соц сетей */
+    padding-left: 10px;
+}
+.container{     /* Выравнивание цеетрального блока с фотографиями товара */
+    float: right;
+    margin-right: 650px;
+    margin-top: -200px;
+}
+.cont1{     /* Выравнивание вертикального блока с фотографиями */
+    display:grid;
+    float: left;
+    margin-right: 30px;
+}
+.cont1 .arrow{      /* Выравнивание стрелки для прокрутки фотографий */
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.cont1 .img2{       /* Выравнивание фотографий */
+    margin-top: 20px;
+}
+.cont1 .img3{       /* Выравнивание фотографий */
+    margin-top: 20px;
+}
+.container .imgCenter{      /* Выравнивание фотографий */
+    display:flex;
+}
+.cont1 .img1:hover{     /* Эффект зума для фотографии 1 */
+    -webkit-transform: scale(1.3, 1.3);
+    transform: scale(1.3, 1.3);
+}
+.cont1 .img2:hover{     /* Эффект зума для фотографии 2 */
+    -webkit-transform: scale(1.3, 1.3);
+    transform: scale(1.3, 1.3);
+}
+.cont1 .img3:hover{     /* Эффект зума для фотографии 3 */
+    -webkit-transform: scale(1.3, 1.3);
+    transform: scale(1.3, 1.3);
+}
