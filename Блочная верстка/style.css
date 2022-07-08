@@ -1,21 +1,24 @@
 /* Это файл CSS, а это комментарий */
-
+body{
+    display: flex;
+}
 h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 30px;
     color: white;
 }
 
 p{
+    display: flex;
     color: black;
-    margin-bottom: 20px;
     margin-left: 10px;
-    text-align:left;
     font-size: 30px;
     font-family:Arial, Helvetica, sans-serif;
 }
 
 .block1 {
-    display:inline-table;
     font-size: 50px;
     vertical-align: middle;
     text-align:center;
@@ -27,7 +30,7 @@ p{
     box-shadow: 0 0 5px;
 }
 .block2 {
-    display:inline-table;
+    position:relative;
     font-size: 50px;
     vertical-align: middle;
     text-align:center;
@@ -40,9 +43,9 @@ p{
 }
 
 img{
-    position:fixed;
-    top: 180px;
-    left: 380px;
+    position: absolute;
+    top: 150px;
+    right: 20px;
 }
 
 .block2 h1{
@@ -50,7 +53,6 @@ img{
 }
 
 .block3 {
-    display:inline-table;
     font-size: 50px;
     vertical-align: middle;
     text-align:center;
