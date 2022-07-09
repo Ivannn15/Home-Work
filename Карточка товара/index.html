@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css"> <!--Подключение стилей-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="app.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -42,8 +44,16 @@
                 <p>⛟ Бесплатная доставка</p>
             </div>
 
+            <div class="stepper"> <!--Выбор количества товаров-->
+                <div class="stepperControls">
+                    <button class="stepperBtnPlus" type="button" spinner-button="up">+</button>
+                    <input  type="number" min="0" max="100" step="1" value="1" class="stepperInput">
+                    <button class="stepperBtnMinus" type="button" spinner-button="down">−</button>
+                </div>
+            </div>
+
             <div class="buttons"> <!--Кнопки -->
-                <button class="b1">В МАГАЗИН</button>
+                <button  class="b1">КУПИТЬ</button>
                 <button class="b2">В ИЗБРАННОЕ</button>
             </div>
 
@@ -67,5 +77,8 @@
             </div>
         </div>
     </main>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script> <!--Подключение jquery и js-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
