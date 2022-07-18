@@ -1,20 +1,24 @@
 body{   /* Установка основного шрифта на странице */
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'p';
+}
+@font-face {
+    font-family: "header";
+    src: url('circe_700.woff2');
+}
+@font-face {
+    font-family: "p";
+    src: url('circe_300.woff');
 }
 header{     /* Изменение положения заголовка */
-    text-align: right;
-    margin-top: 80px;
-    margin-bottom: 0px;
-    margin-right: 250px;
-}
-header h1{      /* Установка жирного шрифта для заголовка */
-    font-weight:900;
+    font-family: 'header';
+    display: flex;
+    margin-right: 160px;
+    margin-bottom: -10px;
 }
 nav{    /* Изменение положения блока навигации */
-    font-size: 14px;
-    text-align: right;
-    margin-right: 210px;
-    margin-bottom: 40px;
+    display:flex;
+    margin-right: 120px;
+    margin-bottom: 20px;
 }
 nav a{      /* Стилизация ссылок  */
     padding: 5px;
@@ -22,9 +26,8 @@ nav a{      /* Стилизация ссылок  */
     text-decoration: none;
 }
 .Price {    /* Редактирование положения блока и стилизация шрифта */
-    margin-left: -30px;
+    margin-left: -70px;
     margin-bottom: 10px;
-    float: right;
     color: #728461;
     font-family: Verdana;
     font-size: 18px;
@@ -70,9 +73,11 @@ nav a{      /* Стилизация ссылок  */
     color: black;
 }
 .blocks{     /* Изменение пололжения блока */   
-    position:absolute;
-    display:grid;
-    right: 0%;
+    display:flex;
+    justify-content: right;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 0px;
 }
 .buttons{   /* Изменение пололжения и размера блока */ 
     display:flex;
@@ -95,41 +100,45 @@ nav a{      /* Стилизация ссылок  */
 }
 .lowText{   /* Стилизация шрифта и выравнивание */
     color: #728461;
-    margin-top: 40px;
-    margin-right: 20px;
+    margin-top: 30px;
+    margin-right: 0px;
 }
 .footer{    /* Стилизация шрифта и выравнивание */
     color: #728461;
     margin-top: 20px;
-    display: inline-flexbox;
+    display: flex;
     margin-bottom: 30px;
+    margin-right: -25px;
+}
+.footer .search{
+    margin-top: 0px;
+    margin-right: 30px;
 }
 .lowImage{  /* Выравнивание логотипов соц сетей */
+    margin-top: -5px;
     display:flex;
-    float: right;
-    margin-right: 260px;
-    margin-top: -45px;
-    padding-left: 30px ;
+    margin-right: 170px;
 }
-.lowImage .img2{    /* Выравнивание логотипов соц сетей */
+.lowImage .imgg2{    /* Выравнивание логотипов соц сетей */
     padding-left: 10px;
 }
-.lowImage .img3{    /* Выравнивание логотипов соц сетей */
+.lowImage .imgg3{    /* Выравнивание логотипов соц сетей */
     padding-left: 10px;
 }
 .container{     /* Выравнивание цеетрального блока с фотографиями товара */
-    float: right;
-    margin-right: 650px;
-    margin-top: -200px;
+    margin-left: 200px;
+    display:flex;
+    max-width: 200px;
+    margin-right:0px;
 }
 .cont1{     /* Выравнивание вертикального блока с фотографиями */
-    display:grid;
-    float: left;
-    margin-right: 30px;
+    display:flex;
+    justify-content:left;
+    flex-direction: column;
 }
 .cont1 .arrow{      /* Выравнивание стрелки для прокрутки фотографий */
     margin-top: 40px;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 .cont1 .img2{       /* Выравнивание фотографий */
     margin-top: 20px;
@@ -138,6 +147,7 @@ nav a{      /* Стилизация ссылок  */
     margin-top: 20px;
 }
 .container .imgCenter{      /* Выравнивание фотографий */
+    padding: 50px;
     display:flex;
 }
 .cont1 .img1:hover{     /* Эффект зума для фотографии 1 */
@@ -192,4 +202,30 @@ nav a{      /* Стилизация ссылок  */
   background-color: #333;
   border-color: #333;
   color: #fff;
+}
+
+.d33 {
+line-height: 29px;
+text-align:center;
+font-size: 12px;
+color: rgb(255, 255, 255);
+width: 35px; 
+height: 33px; 
+margin-left: 20px;
+background: #adadad;
+position: relative;
+border-radius: 5px;
+}
+
+.d33:before {
+display: flex;
+content: "";
+width: 0; 
+height: 0;
+position: absolute; 
+right: 100%; 
+top: calc(60% - 12px);
+border-top: 3px solid transparent;
+border-right: 14px solid #adadad;
+border-bottom: 12px solid transparent;
 }
